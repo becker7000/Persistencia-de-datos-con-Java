@@ -19,7 +19,7 @@ SQL nos permite realizar diversas consultas a bases de datos y hacer operaciones
     ALTER // Modificar tablas.
     DROP // Eliminar (tener mucho cuidado)
 ```
-
+---
 Para crear una base de datos usamos:
 ```sql
     CREATE SCHEMA `prueba`;
@@ -62,3 +62,28 @@ VALUES ('1','Perez','Antonio','Insurgentes 23','México'),
         ('3','Torres','Eder','Arquitectos 1011','Monterrey');
         ;
 ```
+
+Creando una vista con el Query:
+```sql
+    CREATE VIEW `v_personas_global` AS SELECT * FROM prueba.personas;
+```
+
+---
+Agregando una columna a una tabla existente:
+```sql
+
+ALTER TABLE `prueba`.`personas` 
+ADD COLUMN `fecha_nacimiento` DATETIME NULL AFTER `ciudad`;
+
+```
+
+_Nota, este Query quiere decir: alterar la tabla `personas` agregar la columna `fecha_nacimiento` como tipo de dato DATETIME que puede quedar sin valor y agregar despues de la columna `ciudad`._
+
+---
+DROP: sirve para eliminar columnas, tablas o bases de datos. **Advertencia:** debemos tener cuidado al usarlo y asegurarnos que lo estamos usando bien.
+
+Query para eliminar una columna:
+```sql
+    ALTER TABLE `prueba`.`personas` DROP COLUMN `fecha_nacimiento`;
+```
+
