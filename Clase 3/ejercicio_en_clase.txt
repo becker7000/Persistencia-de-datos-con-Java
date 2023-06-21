@@ -1,0 +1,12 @@
+Ejercicio:
+
+* Crear una base de datos: 'tienda'
+* Fijarla como base de datos por defecto
+* Agregar una tabla 'productos' 
+     - Diagrama de la Entidad
+     - Consultar su descripción
+     - Deberá tener al menos 3 atributos
+     - Agregar 3 registros (3 productos)
+     - Hacer una consulta de la tabla.
+
+Tiempo 15 minutos.

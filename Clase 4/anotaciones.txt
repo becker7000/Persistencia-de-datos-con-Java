@@ -1,0 +1,46 @@
+Tablas independientes:
+    Son aquellas que se pueden crear desde el inicio,
+    ya que no dependen de ninguna otra tabla, solo tienen 
+    llaves primarias.
+
+Tablas dependientes:
+    Son aquella que contienen llaves foráneas, se requere 
+    que las tablas que se van a referenciar con las llaves
+    foráneas estén previamente creadas.
+
+Tablas transitivas:
+    No reprensentan nada en la base de datos, como una entidad
+    sólo sirven para la lógica de relación entre tablas. Sirve
+    para hacer relaciones entre tablas de muchos a muchos.
+
+Estructura de una consulta básica.
+
+SELECT: sirve para seleccionar las columnas que queremos 
+        de cierta tabla.
+
+FROM: sirve para seleccionar la tabla de la queremos esas
+      columnas.
+
+WHERE: filtrar datos.
+
+Ejemplo: SELECT id,nombre,email FROM usuarios WHERE id<=4;
+
+Crear 5 consultas diferentes a la tabla usuarios.
+Insertar 10 usuarios en total.
+Insertar 10 categorias.
+Insertar 10 etiquetas.
+
+Reto: Diseñar una base de datos, deberá contar con
+      tablas independientes, tablas dependientes y 
+      al menos un tabla transitiva. Crearla en MySQL.
+      Crear algunos registros y consultas para probarla.
+
+ 
+
+
+
+
+
+
+
+
