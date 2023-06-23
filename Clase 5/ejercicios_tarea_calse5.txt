@@ -1,0 +1,40 @@
+Ejercicio 1:
+
+a) Insertar al menos 5 registros más en tabla 'usuarios'.
+
+b) Modificar la tabla publicaciones para que los 
+   campos 'usuarios_id' y 'categorias_id' puedan ser nulos.
+
+   Insertar al menos 10 publicaciones: 
+   6 completas, 4 sin usuarios_id ni categorias_id.
+
+-- Inserción completa.
+INSERT INTO publicaciones(titulo,fecha,contenido,usuarios_id,categorias_id)
+VALUES ('Demuestran el teorema de Fermat','2019-05-04 00:00:00', 
+		'Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Ad aspernatur mollitia culpa a maiores ducimus voluptate.',6,1);
+
+-- Inserción incompleta.
+INSERT INTO publicaciones(titulo,fecha,contenido)
+VALUES ('Demuestran el teorema de Fermat','2019-05-04 00:00:00', 
+		'Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Ad aspernatur mollitia culpa a maiores ducimus voluptate.');
+
+
+Ejercicio 2:
+
+a) Insertar al menos 6 ligaduras, en la tabla 'publicaciones_etiquetas'.
+   Cuidar que tengan sentido.
+
+   INSERT INTO publicaciones_etiquetas (publicaciones_id,etiquetas_id)
+   VALUES (10,7);
+
+TAREA: (para poder hacer la tarea son necesarios los ejercicios 1 y 2.
+
+Hacer 3 consultas a la tabla categorias.
+  1. Una que proyecte toda la tabla.
+  2. Una que cuente cuantas categorias hay.
+  3. Una que cambie el nombre de la columa 'categoria'.
+
+
+
