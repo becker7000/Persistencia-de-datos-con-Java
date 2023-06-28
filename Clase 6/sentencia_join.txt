@@ -1,0 +1,41 @@
+-- SELECT * 
+-- FROM usuarios;
+
+-- Traer todos los usuarios sin importar que tengan o no una publicación.
+-- SELECT *
+-- FROM usuarios
+-- LEFT JOIN publicaciones 
+-- ON usuarios.id = publicaciones.usuarios_id;
+
+-- Traer todos los usuarios que no tengan ninguna publicación.
+-- SELECT *
+-- FROM usuarios
+-- LEFT JOIN publicaciones
+-- ON usuarios.id = publicaciones.usuarios_id
+-- WHERE publicaciones.usuarios_id IS NULL;
+
+-- Traer a todas la publicaciones sin importar si tienen un usuario asociado.
+-- SELECT *
+-- FROM usuarios
+-- RIGHT JOIN publicaciones
+-- ON usuarios.id = publicaciones.usuarios_id;
+
+-- Traer sólo a las publicaciones que no tienen un usuario asociado.
+-- SELECT *
+-- FROM usuarios
+-- RIGHT JOIN publicaciones 
+-- ON usuarios.id = publicaciones.usuarios_id
+-- WHERE publicaciones.usuarios_id IS NULL;
+
+-- Traer la intersección entre las dos tablas
+-- SELECT *
+-- FROM usuarios
+-- INNER JOIN publicaciones
+-- ON usuarios.id = publicaciones.usuarios_id;
+
+
+
+
+
+
+
